@@ -33,7 +33,7 @@ public class Task1 {
         while (i == false) {
             System.out.println("Проименуйте контакта: ");
             String userName = iScan.nextLine();
-            if (userName == "end") {
+            if (userName.equals("end")) {
                 break;
             } else if (pb.containsKey(userName)) {
                 System.out.println("Даный контакт уже есть в списке!");
@@ -64,7 +64,7 @@ public class Task1 {
             System.out.println("Введите контакта, которому хотите добавить номер");
             System.out.println(pb.keySet());
             String userName = iScan.nextLine();
-            if (userName == "end") {
+            if (userName.equals("end")) {
                 break;
             } else if (!pb.containsKey(userName)) {
                 System.out.println("Вы ошиблись, такого контакта нет.");
